@@ -1,0 +1,17 @@
+*{
+	/* background-color: ; */
+}
+.name{
+	color: blue;
+}
+div{
+	border: 1px dotted black;
+/* 	text-align: center;
+ */}
+
+ .face{
+ 	display: block;
+ 	width: 50%;
+ 	border-radius: 100%;
+ 	border: 10px solid red;
+ }
