@@ -3,9 +3,9 @@ $(document).ready(()=>{
 //create a next button 
 //play a song from a list 
 	//alert("load");
-
 	var x = 4
 
+	var face = '<img src=\'assets/face.jpg\'></img>'
 
 	$(".clickcheck").click(function(){
 		console.log(x)
@@ -17,7 +17,20 @@ $(document).ready(()=>{
 		$('.jukebox').append('test ');
 	})
 	$(".playbutton").click(()=>{
-		console.log('play')
-		$('.jukebox').append('<img src=\'assets/face.jpg\'></img>')
+		var fP= $('.facepic')
+
+		// console.log(fP.css('display'))
+
+		if (fP.css('display')=='none'){
+			// console.log('none')
+			fP.css('display','block')
+		}else{
+			fP.css('display','none')
+			// console.log('block')
+		}
+
+		// fP.css('display', 'block')
+
+		// console.log(fP.css('display'))
 	})
 });
