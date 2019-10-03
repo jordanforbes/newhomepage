@@ -7,6 +7,8 @@ $(document).ready(()=>{
 
 	var face = '<img src=\'assets/face.jpg\'></img>'
 
+	var testWord= 'test '
+
 	$(".clickcheck").click(function(){
 		console.log(x)
 	})
@@ -14,8 +16,14 @@ $(document).ready(()=>{
 	$(".clickme").click(function(){
 		x=x-1
 		console.log(x);
-		$('.jukebox').append('test ');
+		$('.jukePrint').append(testWord);
 	})
+
+	$(".clear").click(function(){
+		console.log('clearbutton')
+		
+	})
+
 	$(".playbutton").click(()=>{
 		var fP= $('.facepic')
 
